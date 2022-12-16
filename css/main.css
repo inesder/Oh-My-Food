@@ -32,3 +32,35 @@ header .header__logo {
   font-size: 18px;
   color: #424242;
 }
+
+/** Explore section **/
+.explore {
+  background-color: #fefefe;
+  padding: 40px 50px;
+}
+.explore .explore__title {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 15px;
+}
+.explore .explore__text {
+  font-size: 25px;
+  padding-bottom: 40px;
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  color: #424242;
+}
+.explore .explore_btn_box {
+  text-align: center;
+}
+.explore .explore__btn {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 30px;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 30px;
+  border: none;
+  box-shadow: 0px 5px 5px #dbdbdb;
+}
