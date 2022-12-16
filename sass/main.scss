@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$light-color: #f4f4f4;
+
+
+body{
+    margin: 0 auto;
+    font-family: Roboto, sans-serif;
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 5px 5px darken($light-color,10%);
+    margin-bottom: 5px;
+.header__logo{
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+}
+
+/* localization section */
+
+.localization{
+    background-color: $light-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .localization__icon{
+        
+        color: darken($light-color,70%);
+    }
+    .localization__text{
+        font-weight: 500;
+        font-size: 18px;
+        color: darken($light-color, 70%);
+    }
+}
