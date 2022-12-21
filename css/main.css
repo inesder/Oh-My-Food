@@ -2,14 +2,16 @@
 body {
   margin: 0 auto;
   font-family: Roboto, sans-serif;
+  background-color: #f7f7f7;
 }
 
 /* HEADER */
 header {
   display: flex;
   justify-content: center;
-  box-shadow: 0px 5px 5px #dbdbdb;
+  box-shadow: 0px 5px 5px #dedede;
   margin-bottom: 5px;
+  background-color: #fff;
 }
 header .header__logo {
   padding-top: 25px;
@@ -18,24 +20,24 @@ header .header__logo {
 
 /* localization section */
 .localization {
-  background-color: #f4f4f4;
+  background-color: #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 .localization .localization__icon {
-  color: #424242;
+  color: #454545;
 }
 .localization .localization__text {
   font-weight: 500;
   font-size: 18px;
-  color: #424242;
+  color: #454545;
 }
 
 /** Explore section **/
 .explore {
-  background-color: #fefefe;
+  background-color: #f7f7f7;
   padding: 40px 50px;
 }
 .explore .explore__title {
@@ -50,7 +52,7 @@ header .header__logo {
   margin: 0;
   text-align: center;
   font-weight: 300;
-  color: #424242;
+  color: #454545;
 }
 .explore .explore_btn_box {
   text-align: center;
@@ -62,5 +64,5 @@ header .header__logo {
   font-size: 20px;
   padding: 20px 30px;
   border: none;
-  box-shadow: 0px 5px 5px #dbdbdb;
+  box-shadow: 0px 5px 5px #dedede;
 }
