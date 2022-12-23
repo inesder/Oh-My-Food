@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-$primary-color: #9356DC;
+$primary-color:  #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $light-color: #f7f7f7;
+$dark-color: #454545;
 
 html {
     box-sizing: border-box;
@@ -48,13 +49,12 @@ header {
     align-items: center;
     gap: 20px;
     &__icon{
-        
-        color: darken($light-color,70%);
+        color: $dark-color;
     }
     &__text{
         font-weight: 500;
         font-size: 18px;
-        color: darken($light-color, 70%);
+        color: $dark-color;
     }
 }
 
@@ -75,7 +75,7 @@ header {
         margin: 0;
         text-align: center;
         font-weight: 300;
-        color: darken($light-color,70%);
+        color: $dark-color;
        } 
        &__btn_box{
         text-align: center;
