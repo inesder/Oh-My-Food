@@ -5,11 +5,24 @@ $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $light-color: #f7f7f7;
 
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 
 body{
     margin: 0 auto;
+    padding: 0;
     font-family: Roboto, sans-serif;
     background-color: $light-color;
+}
+
+a, a:visited, a:active{
+    text-decoration: none;
 }
 
 /* HEADER */
@@ -34,11 +47,11 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    .localization__icon{
+    &__icon{
         
         color: darken($light-color,70%);
     }
-    .localization__text{
+    &__text{
         font-weight: 500;
         font-size: 18px;
         color: darken($light-color, 70%);
@@ -50,13 +63,13 @@ header {
 .explore{
     background-color: $light-color;
     padding: 40px 50px ;
-    .explore__title{
+    &__title{
         font-size: 30px;
         text-align: center;
         margin: 0;
         padding-bottom: 15px;
     }
-    .explore__text{
+    &__text{
         font-size: 25px;
         padding-bottom: 40px;
         margin: 0;
@@ -64,10 +77,10 @@ header {
         font-weight: 300;
         color: darken($light-color,70%);
        } 
-       .explore_btn_box{
+       &__btn_box{
         text-align: center;
        }
-    .explore__btn{
+    &__btn{
         background: linear-gradient($secondary-color, $primary-color);
         border-radius: 30px;
         color:#fff;
@@ -75,7 +88,6 @@ header {
         padding: 20px 30px;
         border: none;
         box-shadow:0px 5px 5px darken($light-color,10%);
-       
     }
     
 }

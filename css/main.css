@@ -1,8 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0 auto;
+  padding: 0;
   font-family: Roboto, sans-serif;
   background-color: #f7f7f7;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
 }
 
 /* HEADER */
@@ -26,10 +40,10 @@ header .header__logo {
   align-items: center;
   gap: 20px;
 }
-.localization .localization__icon {
+.localization__icon {
   color: #454545;
 }
-.localization .localization__text {
+.localization__text {
   font-weight: 500;
   font-size: 18px;
   color: #454545;
@@ -40,13 +54,13 @@ header .header__logo {
   background-color: #f7f7f7;
   padding: 40px 50px;
 }
-.explore .explore__title {
+.explore__title {
   font-size: 30px;
   text-align: center;
   margin: 0;
   padding-bottom: 15px;
 }
-.explore .explore__text {
+.explore__text {
   font-size: 25px;
   padding-bottom: 40px;
   margin: 0;
@@ -54,10 +68,10 @@ header .header__logo {
   font-weight: 300;
   color: #454545;
 }
-.explore .explore_btn_box {
+.explore__btn_box {
   text-align: center;
 }
-.explore .explore__btn {
+.explore__btn {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
   color: #fff;
