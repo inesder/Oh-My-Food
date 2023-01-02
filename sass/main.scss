@@ -5,11 +5,24 @@ $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $light-color: #f7f7f7;
 $dark-color: #454545;
-
 $title-size: 30px;
-@mixin btn_shadow {
+$linear-gradient:linear-gradient($secondary-color, $primary-color);
+
+
+@mixin shadow {
     box-shadow: 0px 5px 5px darken($light-color,10%);
 }
+
+@mixin title {
+    font-size: $title-size;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
 
 html {
     box-sizing: border-box;
@@ -28,9 +41,15 @@ body{
 }
 
 
-
 ul{
     list-style: none;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
     padding: 0;
 }
 
@@ -74,7 +93,7 @@ header {
 
 .explore{
     background-color: $light-color;
-    padding: 40px 50px ;
+    padding: 30px 50px ;
     &__title{
         font-size: $title-size;
         text-align: center;
@@ -91,38 +110,39 @@ header {
         text-align: center;
        }
     &__btn{
-        background: linear-gradient($secondary-color, $primary-color);
+        background: $linear-gradient;
         border-radius: 30px;
         color:#fff;
         font-size: 20px;
         padding: 20px 30px;
         border: none;
-        @include btn_shadow;
+        @include shadow;
     }
     
 }
 
 /** Explore section **/
 
-.cards {
+.box {
     margin-left: 30px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
+
+
 .steps {
 background-color: #fff;
 padding: 30px 20px;
 &__title {
-    font-size: $title-size;
-    padding-bottom: 30px;
+    @include title;
 }
 &__list {
     display: flex;
     gap: 30px;
     align-items: center;
-    @include btn_shadow;
+    @include shadow;
     border-radius: 20px;
     background-color: $light-color;
     padding: 10px 0 10px 40px;
@@ -151,3 +171,61 @@ padding: 30px 20px;
 }
 }
 
+/** Restaurant section **/
+
+
+.cards{
+    background-color: $light-color;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &__title {
+        @include title;
+        padding: 0;
+        margin-bottom: 0;
+    }
+}
+
+.card {
+    @include shadow;
+    border-radius: 20px;
+    &__image {
+        width: 100%;
+        height: 250px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+    }
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+    &__informations {
+        &__title {
+            margin: 0;
+            font-size: 21px;
+        }
+        &__city {
+            margin: 5px 0 ;
+            font-size: 20px;
+        }
+    }
+    &__icon{
+        
+i{
+    font-size: 2rem;
+        &:hover{
+            font-weight: 700;
+            background-image: $linear-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            -moz-background-clip: text;
+            animation: full-heart 300ms ease-in-out both;
+        } 
+    }
+ }
+   
+}
