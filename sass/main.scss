@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap'); 
 $primary-color:  #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
@@ -229,3 +229,25 @@ i{
  }
    
 }
+
+/** Footer **/
+
+.footer{
+    background-color:$dark-color;
+    padding: 1px 20px;
+    color: darken($light-color,2);
+    &__title{
+        font-family: Shrikhand, "cursive";
+        font-weight: normal;
+        font-size: 1.2rem;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    &__icon {
+        width: 0.8rem;
+        margin-right: 5px;
+    }
+  }

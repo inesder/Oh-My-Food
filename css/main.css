@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -189,4 +190,25 @@ header .header__logo {
   -moz-text-fill-color: transparent;
   -moz-background-clip: text;
   animation: full-heart 300ms ease-in-out both;
+}
+
+/** Footer **/
+.footer {
+  background-color: #454545;
+  padding: 1px 20px;
+  color: #f2f2f2;
+}
+.footer__title {
+  font-family: Shrikhand, "cursive";
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer__icon {
+  width: 0.8rem;
+  margin-right: 5px;
 }
