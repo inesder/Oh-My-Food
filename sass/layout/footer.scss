@@ -1,0 +1,19 @@
+.footer{
+    background-color:$dark-color;
+    padding: 1px 20px;
+    color: darken($light-color,2);
+    &__title{
+        font-family: Shrikhand, "cursive";
+        font-weight: normal;
+        font-size: 1.2rem;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    &__icon {
+        width: 0.8rem;
+        margin-right: 5px;
+    }
+  }
