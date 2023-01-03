@@ -1,0 +1,19 @@
+@import "../utils/variables";
+
+.menu_header{
+  padding: 25px 25px 15px 25px;
+  position: relative;
+    &__logo {
+        margin: 0;
+        text-align: center;
+        font-family: Shrikhand;
+        font-weight: normal;
+    }
+    &__arrow{
+        position: absolute;
+        top: 50%;
+        color: $dark-color;
+        font-size: 22px;
+        
+    }
+}
