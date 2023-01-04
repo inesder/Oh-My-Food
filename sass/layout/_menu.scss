@@ -21,5 +21,24 @@
 .menu_image{
     width: 100%;
     object-fit: cover;
-    height: 300px;
+    height: 320px;
+}
+
+.menu_container{
+    border-radius: 50px 50px 0 0;
+    position: relative;
+    z-index: 2;
+    margin-top: -4rem;
+    background-color: $light-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__title{
+        font-family: Shrikhand;
+        font-weight: normal;
+        padding: 20px;
+    }
+    &__heart{
+        padding-right: 30px;
+    }
 }

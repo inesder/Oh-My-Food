@@ -232,5 +232,24 @@ a, a:visited, a:active {
 .menu_image {
   width: 100%;
   object-fit: cover;
-  height: 300px;
+  height: 320px;
+}
+
+.menu_container {
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  z-index: 2;
+  margin-top: -4rem;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu_container__title {
+  font-family: Shrikhand;
+  font-weight: normal;
+  padding: 20px;
+}
+.menu_container__heart {
+  padding-right: 30px;
 }/*# sourceMappingURL=main.css.map */
