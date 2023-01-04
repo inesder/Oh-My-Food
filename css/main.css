@@ -228,3 +228,9 @@ a, a:visited, a:active {
   color: #454545;
   font-size: 22px;
 }
+
+.menu_image {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+}/*# sourceMappingURL=main.css.map */
