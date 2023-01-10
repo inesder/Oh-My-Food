@@ -33,6 +33,10 @@ a, a:visited, a:active {
   color: inherit;
 }
 
+p {
+  margin: 0;
+}
+
 /* HEADER */
 .home_header {
   box-shadow: 0px 5px 5px #dedede;
@@ -86,9 +90,9 @@ a, a:visited, a:active {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
   color: #fff;
-  font-size: 20px;
   padding: 20px 30px;
   border: none;
+  font-size: 20px;
   box-shadow: 0px 5px 5px #dedede;
 }
 
@@ -115,7 +119,7 @@ a, a:visited, a:active {
   box-shadow: 0px 5px 5px #dedede;
   border-radius: 20px;
   background-color: #f7f7f7;
-  padding: 10px 0 10px 40px;
+  padding: 35px 0 35px 40px;
 }
 .steps__list:hover {
   background-color: #e4d5f6;
@@ -241,15 +245,76 @@ a, a:visited, a:active {
   z-index: 2;
   margin-top: -4rem;
   background-color: #f7f7f7;
+}
+.menu_container__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.menu_container__title {
+.menu_container__header__title {
   font-family: Shrikhand;
   font-weight: normal;
   padding: 20px;
+  font-size: 30px;
 }
-.menu_container__heart {
+.menu_container__header__heart {
   padding-right: 30px;
+}
+
+.menu_items {
+  margin: 0 20px 0 20px;
+}
+.menu_items__title {
+  color: #525252;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.menu_items__title:after {
+  content: "";
+  background: #99E2D0;
+  position: absolute;
+  left: 0rem;
+  bottom: 0rem;
+  width: 3rem;
+  height: 0.2rem;
+}
+.menu_items__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu_card {
+  box-shadow: 0px 5px 5px #dedede;
+  padding: 15px 35px 15px 15px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.menu_card__plate {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.menu_card__details {
+  display: flex;
+  justify-content: space-between;
+}
+.menu_card__details__price {
+  font-weight: 700;
+}
+
+.command_btn_box {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.command_btn {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 30px;
+  color: #fff;
+  padding: 20px 30px;
+  border: none;
+  font-size: 20px;
+  width: 40%;
 }/*# sourceMappingURL=main.css.map */

@@ -50,12 +50,8 @@
         text-align: center;
        }
     &__btn{
-        background: $linear-gradient;
-        border-radius: 30px;
-        color:#fff;
-        font-size: 20px;
-        padding: 20px 30px;
-        border: none;
+        @include btn;
+        
         @include shadow;
     }
     
@@ -85,7 +81,7 @@ padding: 30px 20px;
     @include shadow;
     border-radius: 20px;
     background-color: $light-color;
-    padding: 10px 0 10px 40px;
+    padding: 35px 0 35px 40px;
     &:hover {
         background-color: lighten($primary-color, 30);
         i {
