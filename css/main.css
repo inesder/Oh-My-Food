@@ -345,6 +345,9 @@ p {
 .menu_card:nth-child(10) {
   animation-delay: 1500ms;
 }
+.menu_card:nth-child(11) {
+  animation-delay: 1650ms;
+}
 .menu_card__content {
   flex: 1;
 }
