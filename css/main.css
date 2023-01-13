@@ -1,5 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.4s;
+}
+
+.delay-5 {
+  animation-delay: 0.5s;
+}
+
+.delay-6 {
+  animation-delay: 0.6s;
+}
+
+.delay-7 {
+  animation-delay: 0.7s;
+}
+
+.delay-8 {
+  animation-delay: 0.8s;
+}
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -285,11 +321,25 @@ p {
   gap: 15px;
 }
 
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .menu_card {
   box-shadow: 0px 5px 5px #dedede;
   padding: 15px 35px 15px 15px;
   border-radius: 20px;
   background-color: #fff;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu_card__content {
+  flex: 1;
 }
 .menu_card__plate {
   font-size: 20px;
@@ -300,8 +350,34 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.menu_card__details__price {
+.menu_card__price {
   font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+}
+.menu_card:hover .menu_card__price {
+  margin-right: 0.3rem;
+  transition: margin-right 100ms;
+}
+.menu_card:hover .check_icon {
+  margin-right: -2.2rem;
+}
+.menu_card:hover .check_icon i {
+  transform: rotate(360deg);
+  transition: transform 500ms;
+}
+
+.check_icon {
+  margin: -1rem -7.2rem -1rem 1rem;
+  width: 5rem;
+  display: flex;
+  background-color: #99E2D0;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  transition: 0.5s;
+  border-radius: 0 20px 20px 0px;
+  font-size: 1.5rem;
 }
 
 .command_btn_box {
