@@ -1,41 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-.delay-0 {
-  animation-delay: 0s;
-}
-
-.delay-1 {
-  animation-delay: 0.1s;
-}
-
-.delay-2 {
-  animation-delay: 0.2s;
-}
-
-.delay-3 {
-  animation-delay: 0.3s;
-}
-
-.delay-4 {
-  animation-delay: 0.4s;
-}
-
-.delay-5 {
-  animation-delay: 0.5s;
-}
-
-.delay-6 {
-  animation-delay: 0.6s;
-}
-
-.delay-7 {
-  animation-delay: 0.7s;
-}
-
-.delay-8 {
-  animation-delay: 0.8s;
-}
-
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -252,6 +216,15 @@ p {
   margin-right: 5px;
 }
 
+@keyframes card-appear {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
 .menu_header {
   padding: 25px 25px 15px 25px;
   position: relative;
@@ -299,6 +272,7 @@ p {
 
 .menu_items {
   margin: 0 20px 0 20px;
+  transform: translateY(-2rem);
 }
 .menu_items__title {
   color: #525252;
@@ -337,6 +311,39 @@ p {
   display: flex;
   overflow: hidden;
   cursor: pointer;
+  transform: translateY(15px);
+  animation: card-appear 1s forwards;
+  opacity: 0;
+}
+.menu_card:nth-child(1) {
+  animation-delay: 150ms;
+}
+.menu_card:nth-child(2) {
+  animation-delay: 300ms;
+}
+.menu_card:nth-child(3) {
+  animation-delay: 450ms;
+}
+.menu_card:nth-child(4) {
+  animation-delay: 600ms;
+}
+.menu_card:nth-child(5) {
+  animation-delay: 750ms;
+}
+.menu_card:nth-child(6) {
+  animation-delay: 900ms;
+}
+.menu_card:nth-child(7) {
+  animation-delay: 1050ms;
+}
+.menu_card:nth-child(8) {
+  animation-delay: 1200ms;
+}
+.menu_card:nth-child(9) {
+  animation-delay: 1350ms;
+}
+.menu_card:nth-child(10) {
+  animation-delay: 1500ms;
 }
 .menu_card__content {
   flex: 1;
@@ -375,7 +382,7 @@ p {
   align-items: center;
   color: #fff;
   justify-content: center;
-  transition: 0.5s;
+  transition: ease-out 0.3s;
   border-radius: 0 20px 20px 0px;
   font-size: 1.5rem;
 }

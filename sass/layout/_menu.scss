@@ -1,5 +1,15 @@
 @import "../utils/variables";
 
+@keyframes card-appear {
+    from {
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
 .menu_header{
   padding: 25px 25px 15px 25px;
   position: relative;
@@ -49,6 +59,7 @@
 
 .menu_items{
         margin: 0 20px 0 20px;
+        transform: translateY(-2rem);
         &__title{
             color: lighten($dark-color, 5);
             font-weight: 400;
@@ -89,7 +100,14 @@
         display: flex;
         overflow: hidden;
         cursor: pointer;
-        
+        transform: translateY(15px);
+        animation: card-appear 1s forwards;
+        opacity: 0;
+        @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+                animation-delay: 150ms * $i;
+            }
+        }
         &__content{
             flex: 1;
         }
@@ -134,7 +152,7 @@
         align-items: center;
         color: #fff;
         justify-content: center;
-        transition: 0.5s;
+        transition: ease-out 0.3s;
         border-radius: 0 20px 20px 0px;
         font-size: 1.5rem;
     }
