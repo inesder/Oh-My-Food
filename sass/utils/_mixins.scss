@@ -13,6 +13,16 @@
     padding-bottom: 30px;
 }
 
+@mixin heart_hover {
+    font-weight: 700;
+    background-image: $linear-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -moz-background-clip: text;
+    animation: heart 1s ;
+}
+
 @mixin btn {
     background: $linear-gradient;
         border-radius: 30px;

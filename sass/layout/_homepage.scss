@@ -152,19 +152,21 @@ padding: 30px 20px;
         }
     }
     &__icon{
-        
 i{
     font-size: 2rem;
         &:hover{
-            font-weight: 700;
-            background-image: $linear-gradient;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -moz-text-fill-color: transparent;
-            -moz-background-clip: text;
-            animation: full-heart 300ms ease-in-out both;
+            @include heart_hover;
         } 
     }
  }
    
+}
+
+@keyframes heart {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

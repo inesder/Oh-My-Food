@@ -50,9 +50,16 @@
         padding: 20px;
         font-size: 30px;
     }
-    &__heart{
-        padding-right: 30px;
     }
+    &__heart{
+        
+        i {
+            padding-right: 30px;
+            font-size: 2rem;
+            &:hover{
+                @include heart_hover;
+            }
+        }
     }
 
 }
