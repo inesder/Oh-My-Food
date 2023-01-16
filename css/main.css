@@ -1,5 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes card-appear {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+@keyframes opac {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+}
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -219,14 +259,6 @@ p {
   text-align: center;
 }
 
-@keyframes heart {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .footer {
   background-color: #454545;
   padding: 1px 20px;
@@ -247,15 +279,6 @@ p {
   margin-right: 5px;
 }
 
-@keyframes card-appear {
-  from {
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 100%;
-    transform: translateY(0);
-  }
-}
 .menu_header {
   padding: 25px 25px 15px 25px;
   position: relative;
@@ -334,16 +357,9 @@ p {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  padding: 15px 0 15px 0;
 }
 
-@keyframes itemAppear {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 .menu_card {
   box-shadow: 0px 5px 5px #dedede;
   transition-duration: 0.25s;
@@ -464,21 +480,6 @@ p {
   filter: brightness(1.1);
 }
 
-@keyframes opac {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-  }
-}
-@keyframes loading {
-  to {
-    transform: rotate(360deg);
-  }
-}
 .loading {
   position: fixed;
   top: 0;

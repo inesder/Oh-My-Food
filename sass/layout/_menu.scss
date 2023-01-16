@@ -1,14 +1,6 @@
 @import "../utils/variables";
 
-@keyframes card-appear {
-    from {
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 100%;
-        transform: translateY(0);
-    }
-}
+
 
 .menu_header{
   padding: 25px 25px 15px 25px;
@@ -85,19 +77,13 @@
         &__cards{
             display: flex;
             flex-direction: column;
-            gap: 15px
+            gap: 15px;
+            padding: 15px 0 15px 0;
         }
         
     }
 
-    @keyframes itemAppear {
-        0% {
-            transform: scale(0)
-        }
-        100% {
-            transform: scale(1);
-        }   
-    }
+    
     
     .menu_card{
         @include shadow;
