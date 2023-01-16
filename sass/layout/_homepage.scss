@@ -84,7 +84,7 @@ padding: 30px 20px;
     @include shadow;
     border-radius: 20px;
     background-color: $light-color;
-    padding: 35px 0 35px 40px;
+    padding: 35px 40px 35px 40px;
     &:hover {
         background-color: lighten($primary-color, 30);
         i {
