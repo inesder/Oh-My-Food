@@ -96,6 +96,9 @@ p {
   font-size: 20px;
   box-shadow: 0px 5px 5px #dedede;
 }
+.explore__btn :hover {
+  color: green;
+}
 
 /** Explore section **/
 .box {
@@ -351,11 +354,22 @@ p {
 }
 .menu_card__content {
   flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu_card__plate {
   font-size: 20px;
   font-weight: 700;
   padding-bottom: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu_card__ingredients {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu_card__details {
   display: flex;
@@ -404,6 +418,9 @@ p {
   border: none;
   font-size: 20px;
   width: 40%;
+}
+.command_btn :hover {
+  color: green;
 }
 
 @keyframes opac {

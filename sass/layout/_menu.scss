@@ -110,11 +110,22 @@
         }
         &__content{
             flex: 1;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
         &__plate{
             font-size: 20px;
             font-weight: 700;
             padding-bottom: 5px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        &__ingredients{
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
         &__details{
             display: flex;
