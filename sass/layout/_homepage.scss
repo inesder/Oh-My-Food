@@ -129,6 +129,7 @@ padding: 30px 20px;
 .card {
     @include shadow;
     border-radius: 20px;
+    position: relative;
     &__image {
         width: 100%;
         height: 250px;
@@ -160,6 +161,20 @@ i{
     }
  }
    
+}
+
+.badge {
+    background-color: $tertiary-color;
+    color: darken($tertiary-color, 40%);
+    font-weight: 600;
+    font-size: 19px;
+    border-radius: 3px;
+    padding: 9px 15px;
+    width: 110px;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    text-align: center;
 }
 
 @keyframes heart {
