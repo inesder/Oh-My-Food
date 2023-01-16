@@ -173,6 +173,10 @@
     }
     .command_btn {
         @include btn;
+        @include shadow;
         width: 40%;
+        &:hover{
+            @include hover_btn;
+        }
     }
 

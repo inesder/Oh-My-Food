@@ -52,8 +52,10 @@
        }
     &__btn{
         @include btn;
-        
         @include shadow;
+        &:hover{
+            @include hover_btn;
+        }
     }
     
 }
