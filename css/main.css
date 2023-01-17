@@ -573,12 +573,13 @@ p {
 
 @media screen and (min-width: 768px) {
   .menu_step {
-    flex: 33%;
+    flex: 30%;
   }
   .menu_items {
     padding: 30px;
     flex-direction: row;
     gap: 30px;
+    flex-wrap: wrap;
   }
   .menu_container__header__title {
     padding-left: 40px;
