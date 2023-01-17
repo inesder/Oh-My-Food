@@ -17,3 +17,26 @@
         margin-right: 5px;
     }
   }
+
+  @media screen and (min-width: 768px) {
+
+  .footer{
+    padding: 30px 50px 40px 50px;
+    &__list{
+        flex-direction: row;
+        justify-content: space-between;
+        &__item {
+            font-size: 20px;
+    }
+    
+   }
+   &__icon{
+        margin-right: 10px;
+    }
+
+    &__title{
+        font-size: 1.5rem;
+    }
+
+}
+  }

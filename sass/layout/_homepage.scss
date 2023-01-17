@@ -11,6 +11,11 @@
     }
 }
 
+.home_img {
+    display:none;
+}
+
+
 /* localization section */
 
 .localization{
@@ -73,7 +78,8 @@
 
 .steps {
 background-color: #fff;
-padding: 30px 20px;
+padding: 30px 40px 30px 20px;
+
 &__title {
     @include title;
 }
@@ -112,6 +118,11 @@ padding: 30px 20px;
 
 /** Restaurant section **/
 
+.cards_title{
+    @include title;
+        padding: 30px 0 20px 20px;
+        margin-bottom: 0;
+}
 
 .cards{
     background-color: $light-color;
@@ -119,11 +130,6 @@ padding: 30px 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    &__title {
-        @include title;
-        padding: 0;
-        margin-bottom: 0;
-    }
 }
 
 .card {
@@ -177,3 +183,88 @@ i{
     text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+    .home_img{
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        height: 600px;
+        filter: brightness(0.7);
+    }
+
+   .home_header{
+    justify-content: flex-start;
+    padding-left: 20px;
+    box-shadow:none;
+   }
+
+  .desktop_informations{
+    gap: 400px;
+    position: absolute;
+    top: 150px;
+    
+    width: 100%;
+  }
+   .informations_wrap {
+    display: flex;
+    justify-content: space-around;
+   }
+
+   .steps{
+    &__list{
+        &__number{
+            display: none;
+        }
+    }
+   }
+
+  
+    
+   
+
+  .explore {
+    background-color: rgb(247, 247, 247, 0.75);
+    border-radius: 20px;
+    width: 450px;
+    &__text{
+        color: black;
+    }
+   }
+
+   .localization {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 40px 100px;
+    border-radius: 10px;
+   }
+
+   .steps {
+    background-color: rgb(247, 247, 247, 0.75);
+    border-radius: 20px;
+    width: 450px;
+    &__title {
+        text-align: center;
+    }
+    &__list{
+        padding: 20px 40px;
+    }
+   }
+
+   .card{
+    width: 600px;
+   }
+
+   .cards_title{
+    padding: 70px 0 70px 0px;
+    text-align: center;
+   }
+   .cards {
+    padding: 0 100px 70px 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+
+   
+}

@@ -59,6 +59,8 @@
 .menu_items{
         margin: 0 20px 0 20px;
         transform: translateY(-2rem);
+        display: flex;
+        flex-direction: column;
         &__title{
             color: lighten($dark-color, 5);
             font-weight: 400;
@@ -174,3 +176,28 @@
         }
     }
 
+
+    @media screen and (min-width: 768px) {
+        .menu_step{
+            flex: 33%;
+        }
+        .menu_items{
+            padding: 30px;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        .menu_container{
+            &__header{
+                &__title{
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+            }
+        i{
+            padding-right: 40px;
+        }
+        }
+        
+        
+    }
