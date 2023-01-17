@@ -584,7 +584,7 @@ p {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .menu_container i {
+  .menu_container .fa-heart {
     padding-right: 40px;
   }
 }
