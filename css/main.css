@@ -264,7 +264,7 @@ p {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .home_img {
     display: block;
     width: 100%;
@@ -571,7 +571,7 @@ p {
   filter: brightness(1.1);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .menu_step {
     flex: 30%;
     overflow: hidden;
@@ -588,11 +588,6 @@ p {
   }
   .menu_container .fa-heart {
     padding-right: 40px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .menu_items {
-    flex-direction: column;
   }
 }
 .loading {
