@@ -180,6 +180,7 @@
     @media screen and (min-width: 768px) {
         .menu_step{
             flex: 30%;
+            overflow: hidden;
         }
         .menu_items{
             padding: 30px;
@@ -203,4 +204,8 @@
         
     }
 
-    
+    @media screen and (max-width: 992px) {
+        .menu_items{
+            flex-direction: column;
+        }
+    }
