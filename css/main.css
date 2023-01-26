@@ -132,7 +132,7 @@ p {
   text-align: center;
 }
 .explore__btn {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
   border-radius: 30px;
   color: #fff;
   padding: 20px 30px;
@@ -176,11 +176,11 @@ p {
   background-color: #e4d5f6;
 }
 .steps__list:hover i {
-  color: #9356DC;
+  color: #9356dc;
 }
 .steps__list__number {
   color: white;
-  background-color: #9356DC;
+  background-color: #9356dc;
   padding: 5px 10px;
   border-radius: 100px;
   font-weight: 400;
@@ -216,6 +216,7 @@ p {
   transition-duration: 0.25s;
   border-radius: 20px;
   position: relative;
+  flex: 40%;
 }
 .card__image {
   width: 100%;
@@ -242,7 +243,7 @@ p {
 }
 .card__icon i:hover {
   font-weight: 700;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
@@ -251,7 +252,7 @@ p {
 }
 
 .badge {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #278870;
   font-weight: 600;
   font-size: 19px;
@@ -415,7 +416,7 @@ p {
 }
 .menu_container__heart i:hover {
   font-weight: 700;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
@@ -437,7 +438,7 @@ p {
 }
 .menu_items__title:after {
   content: "";
-  background: #99E2D0;
+  background: #99e2d0;
   position: absolute;
   left: 0rem;
   bottom: 0rem;
@@ -542,7 +543,7 @@ p {
   margin: -1rem -7.2rem -1rem 1rem;
   width: 5rem;
   display: flex;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   align-items: center;
   color: #fff;
   justify-content: center;
@@ -557,7 +558,7 @@ p {
 }
 
 .command_btn {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
   border-radius: 30px;
   color: #fff;
   padding: 20px 30px;
@@ -614,6 +615,6 @@ p {
   height: 100px;
   border-radius: 50%;
   border-top: 5px solid #dedede;
-  border-top-color: #FF79DA;
+  border-top-color: #ff79da;
   animation: loading 0.8s linear infinite;
 }/*# sourceMappingURL=main.css.map */

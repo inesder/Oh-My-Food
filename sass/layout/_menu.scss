@@ -1,206 +1,190 @@
 @import "../utils/variables";
 
-
-
-.menu_header{
+.menu_header {
   padding: 25px 25px 15px 25px;
   position: relative;
-    &__logo {
-        margin: 0;
-        text-align: center;
-        font-family: Shrikhand;
-        font-weight: normal;
-    }
-    &__arrow{
-        position: absolute;
-        top: 50%;
-        color: $dark-color;
-        font-size: 22px;
-        
-    }
+  &__logo {
+    margin: 0;
+    text-align: center;
+    font-family: Shrikhand;
+    font-weight: normal;
+  }
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    color: $dark-color;
+    font-size: 22px;
+  }
 }
 
-.menu_image{
-    width: 100%;
-    object-fit: cover;
-    height: 320px;
+.menu_image {
+  width: 100%;
+  object-fit: cover;
+  height: 320px;
 }
 
-.menu_container{
-    border-radius: 50px 50px 0 0;
-    position: relative;
-    z-index: 2;
-    margin-top: -4rem;
-    background-color: $light-color;
-    &__header{
-        display: flex;
+.menu_container {
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  z-index: 2;
+  margin-top: -4rem;
+  background-color: $light-color;
+  &__header {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    &__title{
-        font-family: Shrikhand;
-        font-weight: normal;
-        padding: 20px;
-        font-size: 30px;
+    &__title {
+      font-family: Shrikhand;
+      font-weight: normal;
+      padding: 20px;
+      font-size: 30px;
     }
+  }
+  &__heart {
+    i {
+      padding-right: 30px;
+      font-size: 2rem;
+      &:hover {
+        @include heart_hover;
+      }
     }
-    &__heart{
-        
-        i {
-            padding-right: 30px;
-            font-size: 2rem;
-            &:hover{
-                @include heart_hover;
-            }
-        }
-    }
-
+  }
 }
 
-.menu_items{
-        margin: 0 20px 0 20px;
-        transform: translateY(-2rem);
-        display: flex;
-        flex-direction: column;
-        &__title{
-            color: lighten($dark-color, 5);
-            font-weight: 400;
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
-        &__title:after{
-            content: "";
-            background: $tertiary-color;
-            position: absolute;
-            left: 0rem;
-            bottom: 0rem;
-            width: 3rem;
-            height: 0.20rem;
-        }
-        &__cards{
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            padding: 15px 0 15px 0;
-        }
-        
+.menu_items {
+  margin: 0 20px 0 20px;
+  transform: translateY(-2rem);
+  display: flex;
+  flex-direction: column;
+  &__title {
+    color: lighten($dark-color, 5);
+    font-weight: 400;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  &__title:after {
+    content: "";
+    background: $tertiary-color;
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    width: 3rem;
+    height: 0.2rem;
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0 15px 0;
+  }
+}
+
+.menu_card {
+  @include shadow;
+  padding: 15px 35px 15px 15px;
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  transform: translateY(15px);
+  animation: card-appear 1s forwards;
+  opacity: 0;
+  @for $i from 1 through 11 {
+    &:nth-child(#{$i}) {
+      animation-delay: 150ms * $i;
     }
-
-    
-    
-    .menu_card{
-        @include shadow;
-        padding: 15px 35px 15px 15px;
-        border-radius: 20px;
-        background-color: #fff;
-        display: flex;
-        overflow: hidden;
-        cursor: pointer;
-        transform: translateY(15px);
-        animation: card-appear 1s forwards;
-        opacity: 0;
-        @for $i from 1 through 11 {
-            &:nth-child(#{$i}) {
-                animation-delay: 150ms * $i;
-            }
-        }
-        &__content{
-            flex: 1;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        &__plate{
-            font-size: 20px;
-            font-weight: 700;
-            padding-bottom: 5px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        &__ingredients{
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-        &__details{
-            display: flex;
-            justify-content: space-between;
-        }
-        &__price{
-            font-weight: 700;
-            display: flex;
-            align-items: flex-end;
-            margin-left: 15px;
-        }
-        &:hover{
-            .menu_card__price{
-                margin-right: 0.3rem;
-                transition: margin-right 100ms;
-            }
-            .check_icon{
-                margin-right: -2.2rem;
-                i {
-                    transform: rotate(360deg);
-                    transition: transform 500ms;
-                }
-            }
-        }
-        
-
+  }
+  &__content {
+    flex: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &__plate {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &__ingredients {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  &__details {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__price {
+    font-weight: 700;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 15px;
+  }
+  &:hover {
+    .menu_card__price {
+      margin-right: 0.3rem;
+      transition: margin-right 100ms;
     }
-
-    
-
-    .check_icon{
-       margin: -1rem -7.2rem -1rem 1rem;
-       width: 5rem;
-        display: flex;
-        background-color: $tertiary-color;
-        align-items: center;
-        color: #fff;
-        justify-content: center;
-        transition: ease-out 0.3s;
-        border-radius: 0 20px 20px 0px;
-        font-size: 1.5rem;
+    .check_icon {
+      margin-right: -2.2rem;
+      i {
+        transform: rotate(360deg);
+        transition: transform 500ms;
+      }
     }
-    .command_btn_box{
-        text-align: center;
-        padding-bottom: 40px;
+  }
+}
+
+.check_icon {
+  margin: -1rem -7.2rem -1rem 1rem;
+  width: 5rem;
+  display: flex;
+  background-color: $tertiary-color;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  transition: ease-out 0.3s;
+  border-radius: 0 20px 20px 0px;
+  font-size: 1.5rem;
+}
+.command_btn_box {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.command_btn {
+  @include btn;
+  @include shadow;
+
+  &:hover {
+    @include hover_btn;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu_step {
+    flex: 30%;
+    overflow: hidden;
+  }
+  .menu_items {
+    padding: 30px;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .menu_container {
+    &__header {
+      &__title {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
     }
-    .command_btn {
-        @include btn;
-        @include shadow;
-       
-        &:hover{
-            @include hover_btn;
-        }
+    .fa-heart {
+      padding-right: 40px;
     }
-
-
-    @media screen and (min-width: 992px) {
-        .menu_step{
-            flex: 30%;
-            overflow: hidden;
-        }
-        .menu_items{
-            padding: 30px;
-            flex-direction: row;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-        .menu_container{
-            &__header{
-                &__title{
-                    padding-left: 40px;
-                    padding-right: 40px;
-                }
-            }
-        .fa-heart{
-            padding-right: 40px;
-        }
-        }
-        
-        
-    }
-
+  }
+}

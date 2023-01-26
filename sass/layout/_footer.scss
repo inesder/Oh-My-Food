@@ -1,42 +1,39 @@
-.footer{
-    background-color:$dark-color;
-    padding: 1px 20px;
-    color: darken($light-color,2);
-    &__title{
-        font-family: Shrikhand, "cursive";
-        font-weight: normal;
-        font-size: 1.2rem;
-    }
-    &__list{
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
+.footer {
+  background-color: $dark-color;
+  padding: 1px 20px;
+  color: darken($light-color, 2);
+  &__title {
+    font-family: Shrikhand, "cursive";
+    font-weight: normal;
+    font-size: 1.2rem;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  &__icon {
+    width: 0.8rem;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 30px 50px 40px 50px;
+    &__list {
+      flex-direction: row;
+      justify-content: space-between;
+      &__item {
+        font-size: 20px;
+      }
     }
     &__icon {
-        width: 0.8rem;
-        margin-right: 5px;
+      margin-right: 10px;
+    }
+
+    &__title {
+      font-size: 1.5rem;
     }
   }
-
-  @media screen and (min-width: 768px) {
-
-  .footer{
-    padding: 30px 50px 40px 50px;
-    &__list{
-        flex-direction: row;
-        justify-content: space-between;
-        &__item {
-            font-size: 20px;
-    }
-    
-   }
-   &__icon{
-        margin-right: 10px;
-    }
-
-    &__title{
-        font-size: 1.5rem;
-    }
-
 }
-  }
