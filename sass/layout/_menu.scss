@@ -90,7 +90,7 @@
   transform: translateY(15px);
   animation: card-appear 1s forwards;
   opacity: 0;
-  @for $i from 1 through 11 {
+  @for $i from 1 through 3 {
     &:nth-child(#{$i}) {
       animation-delay: 150ms * $i;
     }
